@@ -54,3 +54,14 @@ Feature: Validacion de Endpoints PI PetStore
     When method put
     Then status 200
     And match response.name == "Salvador"
+    
+  Scenario Outline: Eliminar Mascota
+    Given  url BaseURL
+    And path "/pet/<id>"
+    When method delete
+    Then status 200
+    And match response.message == '<idValido>'
+    Examples:
+      | id        | idValido  |
+#      | 000000123 | 123      |
+      | 000000124 | 124       |
