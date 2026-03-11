@@ -29,7 +29,16 @@ Feature: Validacion de Endpoints PI PetStore
     When method post
     Then status 200
     And match response.name == "<nombre>"
-    Examples:
-    | id        | nombre  | categoria |
-    | 000000123 | firu    | perros    |
-    | 000000124 | pecas   | gatos     |
+      Examples:
+        | id        | nombre  | categoria |
+        | 000000123 | firu    | perros    |
+        | 000000124 | pecas   | gatos     |
+
+  Scenario Outline: Consultar Mascota
+    Given url "https://petstore.swagger.io/v2/pet/<id>"
+    When method post
+    Then status 200
+      Examples:
+        | id        |
+        | 000000123 |
+        | 000000124 |

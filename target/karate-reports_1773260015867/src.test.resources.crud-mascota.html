@@ -37,23 +37,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2026-03-11 03:13:39 p. m.</div>
+    <div>2026-03-11 03:12:25 p. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2.1:43]"><span>[2.1:43]</span> <span>Consultar Mascota</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2.2:44]"><span>[2.2:44]</span> <span>Consultar Mascota</span></a>
           </div>
         </div>
@@ -79,8 +79,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1619</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1587</span>
             </div>
           </div>
           <div class="step-row">
@@ -103,7 +103,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
       </div>
     </div>
-    <div class="time-cell passed">584</div>
+    <div class="time-cell passed">552</div>
   </div>
 
    
@@ -128,10 +128,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2/pet/000000123&quot;</span>
+        <span>Given</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2/000000123&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -159,7 +159,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1026</div>
+    <div class="time-cell passed">1027</div>
   </div>
 
    
@@ -168,25 +168,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.39">15:13:38.001 request:
-1 &gt; POST https://petstore.swagger.io/v2/pet/000000123
+  <div class="preformatted" data-parent="1.39">15:12:23.913 request:
+1 &gt; POST https://petstore.swagger.io/v2/000000123
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:13:38.798 response time in milliseconds: 789
-1 &lt; 200
-1 &lt; Date: Wed, 11 Mar 2026 20:13:38 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
+15:12:24.681 response time in milliseconds: 765
+1 &lt; 404
+1 &lt; Date: Wed, 11 Mar 2026 20:12:24 GMT
+1 &lt; Content-Type: application/xml
+1 &lt; Content-Length: 174
 1 &lt; Connection: keep-alive
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;123&quot;}
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;message&gt;null for uri: http://petstore.swagger.io/v2/000000123&lt;/message&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
 
 </div>   
 
@@ -201,13 +201,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="1.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref failed">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell failed">5</div>
   </div>
 
    
@@ -216,7 +216,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="1.40">15:12:24.768 src/test/resources/crud-mascota.feature:40
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 765, url: https://petstore.swagger.io/v2/000000123, response: 
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;message&gt;null for uri: http://petstore.swagger.io/v2/000000123&lt;/message&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
+src/test/resources/crud-mascota.feature:40
+</div>   
 
   
 
@@ -235,8 +240,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>437</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>436</span>
             </div>
           </div>
           <div class="step-row">
@@ -284,7 +289,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2/pet/000000124&quot;</span>
+        <span>Given</span>&nbsp;<span>url &quot;https://petstore.swagger.io/v2/000000124&quot;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -315,7 +320,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">434</div>
+    <div class="time-cell passed">433</div>
   </div>
 
    
@@ -324,25 +329,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.39">15:13:38.872 request:
-1 &gt; POST https://petstore.swagger.io/v2/pet/000000124
+  <div class="preformatted" data-parent="2.39">15:12:24.788 request:
+1 &gt; POST https://petstore.swagger.io/v2/000000124
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:13:39.304 response time in milliseconds: 431
-1 &lt; 200
-1 &lt; Date: Wed, 11 Mar 2026 20:13:39 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
+15:12:25.216 response time in milliseconds: 426
+1 &lt; 404
+1 &lt; Date: Wed, 11 Mar 2026 20:12:25 GMT
+1 &lt; Content-Type: application/xml
+1 &lt; Content-Length: 174
 1 &lt; Connection: keep-alive
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;124&quot;}
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;message&gt;null for uri: http://petstore.swagger.io/v2/000000124&lt;/message&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
 
 </div>   
 
@@ -357,13 +362,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="2.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref failed">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -372,7 +377,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="2.40">15:12:25.219 src/test/resources/crud-mascota.feature:40
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 426, url: https://petstore.swagger.io/v2/000000124, response: 
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;message&gt;null for uri: http://petstore.swagger.io/v2/000000124&lt;/message&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;
+src/test/resources/crud-mascota.feature:40
+</div>   
 
   
 
