@@ -2,9 +2,11 @@ Feature: Validacion de Endpoints PI PetStore
 
   Background: Configuracion inicial
     * karate.configure('ssl', true);
+    * def BaseURL = "https://petstore.swagger.io/v2"
   
   Scenario Outline: Creacion de mascota
-    Given url "https://petstore.swagger.io/v2/pet"
+    Given url BaseURL
+    And path "/pet"
     And request
     """
       {
@@ -35,7 +37,8 @@ Feature: Validacion de Endpoints PI PetStore
         | 000000124 | pecas   | gatos     |
 
   Scenario Outline: Consultar Mascota
-    Given url "https://petstore.swagger.io/v2/pet/<id>"
+    Given url BaseURL
+    And path "/pet/<id>"
     When method post
     Then status 200
       Examples:
