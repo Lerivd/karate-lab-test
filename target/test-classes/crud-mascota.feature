@@ -3,17 +3,17 @@ Feature: Validacion de Endpoints PI PetStore
   Background: Configuracion inicial
     * karate.configure('ssl', true);
   
-  Scenario: Creacion de mascota
+  Scenario Outline: Creacion de mascota
     Given url "https://petstore.swagger.io/v2/pet"
     And request
     """
       {
-        "id": "000000123",
+        "id": "<id>",
         "category": {
           "id": 0,
-          "name": "perros"
+          "name": "<categoria>"
         },
-        "name": "firu",
+        "name": "<nombre>",
         "photoUrls": [
           "string"
         ],
@@ -28,4 +28,8 @@ Feature: Validacion de Endpoints PI PetStore
     """
     When method post
     Then status 200
-    And match response.name == "firu"
+    And match response.name == "<nombre>"
+    Examples:
+    | id        | nombre  | categoria |
+    | 000000123 | firu    | perros    |
+    | 000000124 | pecas   | gatos     |
