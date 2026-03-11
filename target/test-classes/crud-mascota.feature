@@ -3,6 +3,7 @@ Feature: Validacion de Endpoints PI PetStore
   Background: Configuracion inicial
     * karate.configure('ssl', true);
     * def BaseURL = "https://petstore.swagger.io/v2"
+    * def petRequest = read('classpath:/json_files/petResponse.json')
   
   Scenario Outline: Creacion de mascota
     Given url BaseURL
@@ -45,3 +46,11 @@ Feature: Validacion de Endpoints PI PetStore
         | id        |
         | 000000123 |
         | 000000124 |
+
+  Scenario: Actualizar Mascota
+    Given url BaseURL
+    And path "/pet"
+    And request petRequest
+    When method put
+    Then status 200
+    And match response.name == "Salvador"
