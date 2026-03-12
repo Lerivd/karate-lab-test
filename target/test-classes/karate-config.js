@@ -1,4 +1,6 @@
 function fn(){
+    var env = karate.env || 'dev';
+    karate.log('Ejecutando en ambiente', env);
 
     var config = {
         baseURL: 'https://dummyjson.com'
