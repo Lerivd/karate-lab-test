@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("b5d0b15f-9f96-4a0f-89df-dcd01d1adb46",{name:"lriva"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.resources.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2026-03-12 04:26:49 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Crear Usuario</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Funcionalidades de Usuario</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Crear Usuario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1212</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def peticion = read(&#39;classpath:/json_files/userRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/users/add&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request peticion</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1173</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">16:26:48.380 request:
+1 &gt; POST https://dummyjson.com/users/add
+1 &gt; Host: dummyjson.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:26:49.258 response time in milliseconds: 873
+1 &lt; 201
+1 &lt; Date: Thu, 12 Mar 2026 21:26:50 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 759
+1 &lt; Connection: keep-alive
+1 &lt; access-control-allow-origin: *
+1 &lt; etag: W/&quot;2f7-6fi1N1aX5RwGA/9K3wjvBBJRkCI&quot;
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; vary: Accept-Encoding
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-ratelimit-limit: 100
+1 &lt; x-ratelimit-remaining: 99
+1 &lt; x-ratelimit-reset: 1773350812
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=3,cfOrigin;dur=147
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=GltQMAbIVK6iuaepqN29hSmSlEHyHqvGFatBMAfJWSnie11yri9wH36VXOw2b0Y1DSDkiurwPNsR0aMi%2FOAPnc3HdbYZIgjYd%2BFh&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 9db5e122fe41c772-EZE
+{&quot;id&quot;:209,&quot;firstName&quot;:&quot;&quot;,&quot;lastName&quot;:&quot;&quot;,&quot;maidenName&quot;:&quot;&quot;,&quot;age&quot;:null,&quot;gender&quot;:&quot;&quot;,&quot;email&quot;:&quot;&quot;,&quot;phone&quot;:&quot;&quot;,&quot;username&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;birthDate&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;bloodGroup&quot;:&quot;&quot;,&quot;height&quot;:null,&quot;weight&quot;:null,&quot;eyeColor&quot;:&quot;&quot;,&quot;hair&quot;:{&quot;color&quot;:&quot;&quot;,&quot;type&quot;:&quot;&quot;},&quot;ip&quot;:&quot;&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;&quot;,&quot;city&quot;:&quot;&quot;,&quot;state&quot;:&quot;&quot;,&quot;stateCode&quot;:&quot;&quot;,&quot;postalCode&quot;:&quot;&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:null,&quot;lng&quot;:null},&quot;country&quot;:&quot;&quot;},&quot;macAddress&quot;:&quot;&quot;,&quot;university&quot;:&quot;&quot;,&quot;bank&quot;:{&quot;cardExpire&quot;:&quot;&quot;,&quot;cardNumber&quot;:&quot;&quot;,&quot;cardType&quot;:&quot;&quot;,&quot;currency&quot;:&quot;&quot;,&quot;iban&quot;:&quot;&quot;},&quot;company&quot;:{&quot;department&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;address&quot;:{&quot;address&quot;:&quot;&quot;,&quot;city&quot;:&quot;&quot;,&quot;state&quot;:&quot;&quot;,&quot;stateCode&quot;:&quot;&quot;,&quot;postalCode&quot;:&quot;&quot;,&quot;coordinates&quot;:{&quot;lat&quot;:null,&quot;lng&quot;:null},&quot;country&quot;:&quot;&quot;}},&quot;ein&quot;:&quot;&quot;,&quot;ssn&quot;:&quot;&quot;,&quot;userAgent&quot;:&quot;&quot;,&quot;crypto&quot;:{&quot;coin&quot;:&quot;&quot;,&quot;wallet&quot;:&quot;&quot;,&quot;network&quot;:&quot;&quot;},&quot;role&quot;:&quot;user&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
