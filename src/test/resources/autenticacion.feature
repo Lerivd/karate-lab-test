@@ -1,22 +1,16 @@
-Feature: Validamos autenticacion y consulta de usuarios
+Feature: Validamos consulta de usuarios
 
   Background: Configuracion inicial
-    * karate.configure('ssl', true)
+    * karate.configure('ssl', true);
     * def baseURL = 'https://dummyjson.com'
-    * def autenticacion = read('classpath:/json_files/autenticacion.json')
-    Given url baseURL
-    And path '/auth/login'
-    And header Content-Type = 'application/json'
-    And request autenticacion
-    When method post
-    Then status 200
-    And def respuesta = response
-    And print 'respuesta:', respuesta
+    * def tokenRequest = call read('classpath:/token.feature')
+    * def token = tokenRequest.respuesta.accessToken
+    * print tokenRequest
 
   Scenario: Consulta del usuario
     Given url baseURL
     And path '/auth/me'
-    And header Authorization = 'Bearer ' + respuesta.accessToken
+    And header Authorization = 'Bearer ' + token
     When method get
     Then status 200
     And match response.address.city == 'Washington'
